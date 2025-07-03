@@ -1,12 +1,10 @@
-# CarkApp (Spin App)
+README’de tanımladığım yapıya göre SwiftUI tabanlı bir Xcode projesi oluştur. Projenin adı “CarkApp”.
 
-Bu proje SwiftUI ile yazılmış bir sosyal etkileşimli çark uygulamasıdır.
+1. `CarkAppApp.swift` içinde @main App struct’u yaz.
+2. “Views”, “ViewModels”, “Models”, “Services” klasörlerini oluştur.
+3. Giriş ekranı (Google Sign-In), kullanıcı adı alma ekranı ve Firestore’a kullanıcı verisi kaydeden kodları yaz.
+4. FirebaseManager.swift içinde Firebase konfigürasyonunu yap.
+5. MVVM mimarisine uygun yapıda yaz.
+6. Kullanıcı giriş yaptıktan sonra kullanıcı adı sorulmalı ve Firestore’daki `users` koleksiyonuna `{ uid, username }` şeklinde kaydedilmeli.
 
-## Amaç
-- Kullanıcı Google hesabıyla giriş yapar.
-- Kullanıcı adı belirler.
-- Diğer kullanıcılara "spin" isteği yollar.
-- Spin kabul edilirse birlikte çark döner ve sonucu görürler.
-- Firebase Auth ve Firestore kullanılır.
-
-## Klasör yapısı
+Kodları dosya bazlı oluştur ve hazır olduğunda diğer ekranlara geç.
